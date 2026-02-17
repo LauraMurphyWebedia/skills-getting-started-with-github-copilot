@@ -90,11 +90,44 @@ section h3 {
 }
 
 .participants-list {
-  margin: 8px 0 0 18px;
+  margin: 8px 0 0 0;
   padding-left: 0;
-  list-style-type: disc;
+  list-style-type: none;
   color: #333;
   font-size: 15px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.participant-name {
+  flex: 1;
+  padding-right: 8px;
+  word-break: break-all;
+}
+
+.delete-participant {
+  background: #ffebee;
+  color: #c62828;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.delete-participant:hover {
+  background: #c62828;
+  color: #fff;
 }
 
 .participants-section.empty {
